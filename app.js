@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
-
+const helmet = require ('helmet');
 const app = express();
-
+app.use(helmet())
+app.use(helmet.noCache());
+app.use(helmet.frameguard());
 // View engine setup
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
