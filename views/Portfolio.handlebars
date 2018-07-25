@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>PhotoGallery</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/skel.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  <style>
+* {
+    box-sizing: border-box;
+}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+.brand{ 
+  text-align: center;
+  color: black;
+}
+
+.brand span{
+  color:#4efd55;
+}
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 25px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #82b440de;
+    padding: 10px;
+    border: 3px solid antiquewhite;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.zoom{
+      height: 180px;
+}
+</style>
+</head>
+  <body class="homepage">
+    <div class="headerLogo style5">
+      <div class="item1">
+        <img class="logoimg" 
+        style="float: left;max-height: -webkit-fill-available; max-width: 192px;margin-top: -40px" src="\public\assets\13.png">
+          <h1 style="margin-left: 150px; font-size: 50px;margin-top: 43px; color: #82b440;">Planet Drilling Company Pvt. Ltd.</h1>
+          <h4 style="margin-left: 150px; font-size: 35px;margin-top: 43px;    color: #82b440;">The Water Well Drilling Company.</h4> 
+        </div> 
+       </div>
+    <!-- Header Wrapper -->
+      <div class="wrapper style1">
+      
+        <!-- Header -->
+        <div id="header">
+          <div class="container">
+            <!-- Logo -->
+              <h1><a href="#" id="logo">Planet Drilling Company</a></h1>
+            
+            <!-- Nav -->
+              <nav id="nav">
+                <ul>
+                  <li class="active"><a href="/">Home</a></li>
+                  <li>
+                  <a href="/about">Company Overview</a>
+                  </li>
+                  <li><a href="/service">Well Services</a></li>
+                  <li><a href="/portfolio">Portfolio</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+  
+          </div>
+        </div>
+      </div>
+    <!-- Main -->
+
+      <div id="main" class="wrapper style4">
+    <h1 class="brand"><span>Planet</span> Drilling Company</h1>
+				<hr>
+
+			<h2 class="brand">PORTFOLIO</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img class="zoom" src="\public\assets\24.jpg" alt="Mountains" style="width: 100%;">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size : 14px;">Rotary Drill</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\22.jpg" alt="Lights" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">DTH IN Hetauda</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\30.jpg" alt="Nature" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">DTH IN Dadeldura</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\14.jpg" alt="Mountains" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">Electric Logging IN KMC Hospital</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\26.jpg" alt="Mountains" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 12px;">Air Compressor(Well Rehabilitation)</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\27.jpg" alt="Mountains" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">On Duty</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\21.jpg" alt="Mountains" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">SubmerSible Pump Installation</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img  class="zoom" src="\public\assets\12.jpg" alt="Mountains" style="width:100%">
+      <h3 style="font-size: 12px;font-family: cursive;">The Water Well Drilling Company</h3>
+      <p style="font-size: 14px;">On Work.</p>
+    </div>
+  </div>
+
+<div class="contentlogo">
+  <img src="\public\assets\13.jpg" alt="logo" style="width:50%;    display: block;
+    margin-left: auto;
+    margin-right: auto;">
+  <h2 style="font-size: 1.25em;font-family: cursive;color: darkslategrey;">Planet drilling Company Trusted By</h2>
+  <nav id="nav">
+  <ul style="font-family: serif;font-size: 16px;font-style: oblique;padding: 1em 6em;text-align: center !important;">
+    <li style="color:#3a57a7;">SIPARDI TRADING PVT. LTD </li>
+    <li style="color:#dd7031;">NEPALESE ARMY </li>
+    <li style="color:#85640a;">KMC HOSPITAL </li>
+    <li style="color:#037272;">BHATBHATENI SUPERMARKET AND DEPARTMENT STORE PVT. LTD</li>
+    <li style="color:#32043d;">HYDRO SOLUTIONS </li>
+    <li style="color:#fdfdff;">GROUND WATER RESEARCH BOARD </li>
+    <li style="color:#000000;">BOTTLERS NEPAL Ltd</li>
+    <li> </li>
+  </ul>
+  </nav>
+
+</div>
+
+</div>
+  <!-- Footer -->
+			<div class="wrapper style3">
+				<section class="container">
+					<header class="major">
+						<h2>Get In Touch With Us To Know More About US</h2>
+					</header>
+					<p>Water is a natural and valuable resource, and to protect the resource, we utilize rigid construction methods. Planet Drilling Company is licensed and bonded to provide water well construction in Nepal.</p>
+					<a href="/about" class="button alt">Learn More</a>
+				</section>
+			</div>
+
+		<!-- Section Three -->
+			<div class="wrapper style4">
+				<section class="container">
+					<header class="major">
+						<h2>Contact Address</h2>
+						<span class="byline">New Baneshwor, Kathmandu, Nepal • Phone Number: +977 9851071880 / 9801071880</span>
+					</header>
+					<div class="row flush">
+					</div>
+				</section>
+			</div>
+
+
+	<!-- Footer -->
+		<div id="footer">
+      <section class="container">
+        <header class="major">
+          <h2>Connect with us</h2>
+          <span class="byline">Planet Drilling Company Pvt. Ltd.</span>
+        </header>
+        <ul class="icons">
+          <li class="active"><a href="https://www.facebook.com/ilovedrill/" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
+          <li><a href="https://twitter.com/"  target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
+          <li><a href="https://np.linkedin.com/in/prem-karki-97715442" target="_blank" class="fa fa-linkedin"><span>Pinterest</span></a></li>
+          <li><a href="https://plus.google.com/people" target="_blank" class="fa fa-google-plus"><span>Google+</span></a></li>
+        </ul>
+        <hr />
+      </section>
+
+      <div class="wrapper style4">
+        <section class="container">
+          <header class="major" style="color: black;">
+            <h2>Contact Address</h2>
+            <span class="byline">New Baneshwor, Kathmandu, Nepal • Phone Number: +977 9851071880 / 9801071880</span>
+          </header>
+          <div class="row flush">
+          </div>
+        </section>
+      </div>
+      
+      <!-- Copyright -->
+        <div id="copyright">
+          <h4>Designed By: Anil Khatri</h4>
+        </div>        
+    </div>
+
+  </body>
+</html>

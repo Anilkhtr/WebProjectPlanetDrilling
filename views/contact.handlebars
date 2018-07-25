@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+ <link rel="stylesheet" type="text/css" href="public/css/skel.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+    <style>
+* {
+    box-sizing: border-box;
+}
+.contactinfo{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+
+.brand span{
+  color:#82b440;
+}
+.company-info{
+  background:#ff9f6fed;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+.contact{
+  background:#c1bfb9de;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+  background: floralwhite;
+}
+@media(min-width:500px){
+  .wrapper{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+  .wrapper > *{
+    padding:2em;
+  }
+.contact form button{
+    background: #20637773;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+.company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+  </style>
+</head>
+  <body class="homepage">
+    <div class="headerLogo style5">
+      <div class="item1">
+        <img class="logoimg" 
+        style="float: left;max-height: -webkit-fill-available; max-width: 192px;margin-top: -40px" src="\public\assets\13.png">
+          <h1 style="margin-left: 150px; font-size: 50px;margin-top: 43px;    color: #82b440;">Planet Drilling Company Pvt. Ltd.</h1>
+          <h4 style="margin-left: 150px; font-size: 35px;margin-top: 43px;    color: #82b440;">The Water Well Drilling Company.</h4> 
+        </div> 
+       </div>
+    <!-- Header Wrapper -->
+      <div class="wrapper style1">
+
+      <!-- Header -->
+        <div id="header">
+          <div class="container">
+            <!-- Logo -->
+              <h1><a href="#" id="logo">Planet Drilling Company</a></h1>
+            
+            <!-- Nav -->
+              <nav id="nav" style="margin-top: -28px;">
+                <ul>
+                  <li class="active"><a href="/">Home</a></li>
+                  <li>
+                  <a href="/about">Company Overview</a>
+                  </li>
+                  <li><a href="/service">Well Services</a></li>
+                  <li><a href="/portfolio">Portfolio</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+  
+          </div>
+        </div>
+        
+      <!-- Banner -->
+        <div id="banner">
+          <section class="container">
+            <h4>An Industry Leader Since 2010</h4>
+          </section>
+        </div>
+      </div>
+    
+    <!-- Section Two -->
+      <div class="wrapper style4">
+        <section class="container">
+          <div style="max-width:1170px; margin-left:auto; margin-right:auto;padding:1em;">
+            <h1 class="brand"><span>Planet</span> Drilling Company</h1>
+            <div class="wrapper animated bounceInLeft" style="box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);padding: 0em;display: grid;
+            grid-template-columns: 1fr 2fr;">
+              <div class="company-info">
+                <h3>Planet Drilling Company</h3>
+                <ul style=" list-style: none;padding:0;">
+                  <li><i class="fa fa-road"></i> New Baneshwor, Kathmandu Nepal</li>
+                  <li><i class="fa fa-phone"></i>+977 9851071880 / 9801071880</li>
+                  <li><i class="fa fa-envelope"></i> premkarki@planetdrilling.com</li>
+                </ul>
+              </div>
+              <div class="contact">
+                <h3>Email Us</h3>
+                <h2> {{msg}} </h2>
+                <form method="POST" action="send">
+                  <p>
+                    <label>Name</label>
+                    <input type="text" name="name">
+                  </p>
+                  <p>
+                    <label>Company</label>
+                    <input type="text" name="company">
+                  </p>
+                  <p>
+                    <label>Email Address</label>
+                    <input type="email" name="email">
+                  </p>
+                  <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone">
+                  </p>
+                  <p class="full">
+                    <label>Message</label>
+                    <textarea name="message" rows="5"></textarea>
+                  </p>
+                  <p class="full">
+                    <button type="submit">Submit</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+  <!-- Footer -->
+<div id="footer">
+      <section class="container">
+        <header class="major">
+          <h2>Connect with us</h2>
+          <span class="byline">Planet Drilling Company Pvt. Ltd.</span>
+        </header>
+        <ul class="icons">
+          <li class="active"><a href="https://www.facebook.com/ilovedrill/" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
+          <li><a href="https://twitter.com/"  target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
+          <li><a href="https://np.linkedin.com/in/prem-karki-97715442" target="_blank" class="fa fa-linkedin"><span>Pinterest</span></a></li>
+          <li><a href="https://plus.google.com/people" target="_blank" class="fa fa-google-plus"><span>Google+</span></a></li>
+        </ul>
+        <hr />
+      </section>
+
+      <div class="wrapper style4">
+        <section class="container">
+          <header class="major" style="color: black;">
+            <h2>Contact Address</h2>
+            <span class="byline">New Baneshwor, Kathmandu, Nepal • Phone Number: +977 9851071880 / 9801071880</span>
+          </header>
+          <div class="row flush">
+          </div>
+        </section>
+      </div>
+      
+      <!-- Copyright -->
+        <div id="copyright">
+          <h4>Designed By: Anil Khatri</h4>
+        </div>        
+    </div>
+
+  </body>
+</html>
